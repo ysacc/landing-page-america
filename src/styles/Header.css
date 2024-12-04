@@ -14,7 +14,7 @@
 
 
 .logo {
-  width: 110px; /* Ajusta el tamaño del logo */
+  width: 110px; 
   margin-bottom: 20px;
   margin-right: auto;
 }
@@ -47,26 +47,11 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap:20px;
 }
 
 .logos img {
   width: 150px; 
-}
-
-.download-button {
-  padding: 15px 30px;
-  background-color: transparent;
-  border: 2px solid #e65725;
-  border-radius: 30px;
-  color: #e65725;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.download-button:hover {
-  background-color: #e65725;
-  color: white;
 }
 
 .footer {
@@ -92,29 +77,54 @@ p {
 }
 
 @media (max-width: 768px) {
-  .logos img {
-    width: 40px;
+  .logo {
+    width: 70px; 
   }
 
-  .buttons {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .buttons button {
-    width: 80%;
-    margin: 0 auto;
+  .main{
+    justify-content: center;
+    align-content: center;
   }
 
   h1 {
-    font-size: 2rem;
+    color: #f97f53;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
   }
 
-  h2 {
-    font-size: 1.5rem;
+  .text-logos {
+    display: flex;
+
+  }
+
+  .logos {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap:8px;
+  }
+
+  .logos1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    place-content: space-between;
+  }
+
+  .logos2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+  }
+
+  .logos img {
+    width: 150px; 
   }
 
   p {
     font-size: 0.9rem;
   }
+
 }

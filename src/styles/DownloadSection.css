@@ -75,30 +75,81 @@
 }
 
 @media (max-width: 768px) {
-  .logos img {
-    width: 40px;
+  .download-section {
+    display: block;
+    background: linear-gradient(135deg, #ff6d27, #e65725, #b52db5);
+    color: white;
+    padding: 50px 70px;
+    text-align: center;
+    height: 100vh;
+    width: 100vh;
+    justify-content: center;
+    align-content: center;
   }
-
+  
+  .download-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+  
+  .download-section p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    color: white;
+    text-align: left;
+    width: 250px;
+  }
+  
+  .download-header{
+    display: grid;
+    justify-content: start;
+    align-content: center;
+    flex-grow: 1;
+    text-align: left;
+  }
+  
+  .text-buttons{
+    display: inline-flex;
+    color: white;
+    height: 500px;
+    align-items: center;
+    gap: 80px;
+  }
+  
+  .text-strong{
+   font-weight: 700;
+  }
   .buttons {
-    flex-direction: column;
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    height: 20px;
+    width: 550px;
+    align-content: center;
+  }
+  .buttons-intro{
     gap: 10px;
   }
-
+  .buttons-intro button{
+    gap: 10px;
+  }
   .buttons button {
-    width: 80%;
-    margin: 0 auto;
+    padding: 15px 25px;
+    font-size: 1rem;
+    border: 2px solid white;
+    border-radius: 30px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align:justify ;
   }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  p {
-    font-size: 0.9rem;
+  
+  .buttons button:hover {
+    background-color: white;
+    color: #e65725;
   }
 }
 
