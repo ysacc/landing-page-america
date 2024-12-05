@@ -1,10 +1,14 @@
 .download-section {
   display: grid;
-  background: linear-gradient(135deg, #ff6d27, #e65725, #b52db5);
-  color: white;
-  padding: 80px 20px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background: url('/assets/fondo-naranja.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  color:#ccc;
   text-align: center;
   height: 100vh;
+  width: 100%;
   justify-content: center;
   align-content: center;
 }
@@ -13,14 +17,16 @@
   font-size: 2rem;
   margin-bottom: 20px;
   font-weight: 400;
+  line-height: 1;
 }
 
 .download-section p {
   font-size: 1.5rem;
   margin-bottom: 40px;
-  color: white;
+  color:#ccc;
   text-align: left;
   width: 250px;
+  font-weight: 300;
 }
 
 .download-header{
@@ -32,16 +38,25 @@
 }
 
 .text-buttons{
+  font-family: 'WhitneyBook', sans-serif;  
   display: inline-flex;
-  color: white;
+  color:  #ccc;
   height: 500px;
   align-items: center;
   gap: 80px;
 }
 
 .text-strong{
+  color: white;
  font-weight: 700;
+ font-size:xx-large;
 }
+
+.text-strong1{
+  color: white;
+  font-weight: 700;
+  font-size:26px;
+ }
 .buttons {
   display: grid;
   flex-wrap: wrap;
@@ -60,8 +75,8 @@
 .buttons button {
   padding: 15px 25px;
   font-size: 1rem;
-  border: 2px solid white;
-  border-radius: 30px;
+  border: 3px solid white;
+  border-radius: 15px;
   background: none;
   color: white;
   cursor: pointer;
@@ -74,59 +89,80 @@
   color: #e65725;
 }
 
+.blur {
+  filter: blur(5px);
+  transition: filter 0.60s ease-in-out;
+}
+
+.blur.visible {
+  filter: blur(0);
+}
+
+
 @media (max-width: 768px) {
   .download-section {
-    display: block;
-    background: linear-gradient(135deg, #ff6d27, #e65725, #b52db5);
+    display: grid;
+    background: url('/assets/fondo-naranja.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
     color: white;
-    padding: 50px 70px;
     text-align: center;
     height: 100vh;
-    width: 100vh;
+    width: 500px;
     justify-content: center;
     align-content: center;
   }
-  
+  .download-main{
+    width: 320px;
+  }
   .download-section h2 {
     font-size: 2rem;
-    margin-bottom: 20px;
     font-weight: 400;
   }
   
   .download-section p {
     font-size: 1.5rem;
-    margin-bottom: 40px;
-    color: white;
+    color:  #ccc;
     text-align: left;
     width: 250px;
   }
   
   .download-header{
     display: grid;
-    justify-content: start;
-    align-content: center;
+    align-content: space-evenly;
     flex-grow: 1;
     text-align: left;
+    height: 350px;
+    width: 320px;
   }
   
   .text-buttons{
     display: inline-flex;
-    color: white;
+    color:  #ccc;
     height: 500px;
     align-items: center;
     gap: 80px;
   }
   
   .text-strong{
+    color: white;
    font-weight: 700;
+   font-size:xx-large;
   }
+  
+  .text-strong1{
+    color: white;
+    font-weight: 700;
+    font-size:26px;
+   }
   .buttons {
     display: grid;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
-    height: 20px;
-    width: 550px;
+    gap: 20px;
+    height: 300px;
+    width: 251px;
     align-content: center;
   }
   .buttons-intro{
@@ -139,7 +175,7 @@
     padding: 15px 25px;
     font-size: 1rem;
     border: 2px solid white;
-    border-radius: 30px;
+    border-radius: 15px;
     background: none;
     color: white;
     cursor: pointer;

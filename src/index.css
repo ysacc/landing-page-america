@@ -1,5 +1,54 @@
+@font-face {
+  font-family: 'WhitneyLight';
+  src: url('/Fonts/WhitneyLight.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'WhitneyBook';
+  src: url('/Fonts/WhitneyBook_0.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'WhitneyMedium';
+  src: url('/Fonts/WhitneyMedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'WhitneySemibold';
+  src: url('/Fonts/WhitneySemibold_0.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DSType-ActaExtraBold';
+  src: url('/Fonts/DSType-Acta-ExtraBold_0.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Font Awesome 6 Free-Regular-400';
+  src: url('/Fonts/Font Awesome 6 Free-Regular-400.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Font Awesome 6 Free-Solid-900';
+  src: url('/Fonts/Font Awesome 6 Free-Solid-900.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'WhitneyBook', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -7,7 +56,6 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #ffffff;
 
-  font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

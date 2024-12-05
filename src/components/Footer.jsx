@@ -1,9 +1,9 @@
 import '../styles/Footer.css';
-import america_digital from '../assets/logo-pie-04.svg'; 
-import america_studios from '../assets/logo-pie-02.svg';
-import kapow from '../assets/logo-pie-03.svg';
-import n_canal from '../assets/logo-pie-05.svg';
-import america from '../assets/logo-pie-01.svg';
+import america_digital from '/assets/logo-pie-04.svg'; 
+import america_studios from '/assets/logo-pie-02.svg';
+import kapow from '/assets/logo-pie-03.svg';
+import n_canal from '/assets/logo-pie-05.svg';
+import america from '/assets/logo-pie-01.svg';
 
 export default function Footer() {
   return (

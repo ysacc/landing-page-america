@@ -1,7 +1,8 @@
 .container{
   width: 100%;
-  height: 100vh; /* Altura de toda la pantalla */
+  height: 100vh; 
   display: flex;
+  background-color: #ffffff;
   flex-direction: column;
 }
 
@@ -15,24 +16,26 @@
 
 .logo {
   width: 110px; 
-  margin-bottom: 20px;
+  margin-left: 30px;
   margin-right: auto;
+  margin-top: 30px;
 }
 
 h1 {
-  color: #f97f53;
+  color: #ff6d27;
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
 p {
   font-size: 2rem;
-  color: #f97f53;
+  color: #ff6d27;
   margin-bottom: 30px;
   font-weight: 400;
+  line-height: 1.2;
 }
 .p-strong{
-  color: #4040ff;
+  color: #8484ff;
   font-weight: 400;
 }
 .text-logos {
@@ -57,23 +60,28 @@ p {
 .footer {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px; /* Deja algo de espacio al final */
+  margin-bottom: 20px; 
+  flex-direction: column;
+  align-items: center;
 }
 
 .cta-button {
-  border: 2px solid #e63946;
+  border: 4px solid #ff6d27;
   background: transparent;
-  color: #e63946;
+  color: #ff6d27;
   padding: 10px 20px;
   font-size: 1rem;
   cursor: pointer;
   border-radius: 25px;
   transition: all 0.3s ease;
+  width: 300px;
+  margin:20px;
 }
 
 .cta-button:hover {
-  background-color: #e63946;
+  background-color: #ff6d27;
   color: #ffffff;
+  border: 4px solid #ff6d27;
 }
 
 @media (max-width: 768px) {
@@ -82,6 +90,7 @@ p {
   }
 
   .main{
+    font-family: 'WhitneySemibold', sans-serif;
     justify-content: center;
     align-content: center;
   }
@@ -120,11 +129,12 @@ p {
   }
 
   .logos img {
-    width: 150px; 
+    width: 90px; 
   }
 
   p {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
+    line-height: 1.2;
   }
 
 }

@@ -2,7 +2,7 @@ import Header from './components/Header';
 import DownloadSection from './components/DownloadSection';
 import Footer from './components/Footer';
 import { useEffect, useRef, useState } from 'react';
-import loadingGif from './assets/Precarga-America-v02.gif'
+import loadingGif from '/assets/Precarga-America-v02.gif'
 import './App.css';
 
 export default function App() {
@@ -18,10 +18,13 @@ export default function App() {
   }, []);
 
   const scrollToDownloadSection = () => {
-    if (downloadSectionRef.current) {
-      downloadSectionRef.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  if (downloadSectionRef.current) {
+    downloadSectionRef.current.classList.add('visible');
+    downloadSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
+  
 
   return (
     <>

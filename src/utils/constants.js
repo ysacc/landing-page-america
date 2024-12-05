@@ -17,7 +17,7 @@ export const HEADER_TEXT = {
   };
 
   export const DOWNLOAD_SECTION_TEXT = {
-    header: 'Descárgate la',
+    header: '¡Descárgate la',
     header2: 'Preventa 2025!',
     description: `Desde aquí puedes `,
     description1: `descargar `,       
