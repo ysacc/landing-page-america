@@ -106,6 +106,42 @@
   filter: blur(0);
 }
 
+/* Para pantallas entre 768px y 1600px */
+@media (max-width: 1600px) and (min-width: 768px) {
+  .download-main{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+  }
+  .download-header{
+    display: grid;
+    justify-content: start;
+    align-content: center;
+    flex-grow: 1;
+    text-align: left;
+  }
+  .text-buttons{
+    font-family: 'WhitneyBook', sans-serif;  
+    display: inline-flex;
+    color:  #fcd9cb;
+    height: 500px;
+    align-items: center;
+    gap: 80px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .buttons {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    height: 20px;
+    width: 550px;
+    align-content: center;
+    justify-items: center;
+  }
+}
 
 @media (max-width: 768px) {
   .download-section {
