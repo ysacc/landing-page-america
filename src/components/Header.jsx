@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Header.css';
 import { motion } from 'framer-motion';
-import logo_america from '/assets/logo-america.svg'; 
+import logo_america from '/assets/Precarga-America-v02.gif'; 
 import america_digital from '/assets/logo-04.svg'; 
 import america_studios from '/assets/logo-02.svg';
 import kapow from '/assets/logo-03.svg';
@@ -175,7 +175,7 @@ export default function Header({ onScrollToDownload }) {
           whileTap={{ scale: 0.9 }}
         >  {HEADER_TEXT.buttonText}
          </motion.button>
-      <MdKeyboardDoubleArrowDown  style={{width:"35px",height:"35px",color:"#ff6d27",}}/>
+      <MdKeyboardDoubleArrowDown  style={{width:"35px",height:"35px",color:"#e8521d",}}/>
       </motion.div>
       
     </div>

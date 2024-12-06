@@ -1,21 +1,24 @@
 .download-section {
   display: grid;
-  font-family:'WhitneyBook';
+  font-family: 'WhitneyBook';
   background: url('/assets/fondo-naranja.jpg');
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
-  color:white;
+  color: white;
   text-align: center;
   height: 100vh;
   width: 100%;
   justify-content: center;
   align-content: center;
-  transition: filter 0.3s ease;
+  transition: filter 1.00s ease;
+  filter: grayscale(100%); /* Fondo en gris por defecto */
 }
+
 .download-section:hover {
-  filter: grayscale(100%);
+  filter: grayscale(0%); /* El fondo se muestra a color al pasar el mouse */
 }
+
 
 .download-section h2 {
   font-size: 2.5rem;
@@ -27,7 +30,7 @@
 .download-section p {
   font-size: 2.5rem;
   margin-bottom: 40px;
-  color:#fff;
+  color:#fcd9cb;
   text-align: left;
   width: 400px;
   font-weight: 100;
@@ -81,7 +84,7 @@
   font-size: 1.2rem;
   height: 60px;
   border: 3px solid white;
-  border-radius: 30px;
+  border-radius: 100px;
   background: none;
   color: white;
   cursor: pointer;
@@ -174,7 +177,7 @@
     padding: 15px 25px;
     font-size: 0.8rem;
     border: 2px solid white;
-    border-radius: 15px;
+    border-radius: 100px;
     background: none;
     color: white;
     cursor: pointer;
