@@ -2,7 +2,7 @@ import { forwardRef } from 'react';
 import '../styles/DownloadSection.css';
 import { DOWNLOAD_SECTION_TEXT } from '../utils/constants';
 import { useMediaQuery } from 'react-responsive';
-
+import { motion } from 'framer-motion';
 
 const DownloadSection = forwardRef((props, ref) => {  
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
@@ -32,12 +32,12 @@ const DownloadSection = forwardRef((props, ref) => {
         <div className="text-buttons">
           <p>{DOWNLOAD_SECTION_TEXT.description} <br /><strong className="text-strong1">{DOWNLOAD_SECTION_TEXT.description1}</strong> {DOWNLOAD_SECTION_TEXT.description2} <br />{DOWNLOAD_SECTION_TEXT.description3} <br />{DOWNLOAD_SECTION_TEXT.description4}<strong className="text-strong1">{DOWNLOAD_SECTION_TEXT.description5}</strong></p>
           <div className="buttons">
-            <button style={{width:"330px"}}>TARIFARIO AMERICA</button>
-            <button style={{width:"380px"}}>TARIFARIO CANAL N</button>
-            <button style={{width:"420px"}}>TARIFARIO DIGITAL</button>
+            <button style={{width:"400px"}}>TARIFARIO AMERICA</button>
+            <button style={{width:"450px"}}>TARIFARIO CANAL N</button>
+            <button style={{width:"550px"}}>TARIFARIO DIGITAL</button>
             <div className="buttons-intro">
-              <button >PROGRAMACION ACTUAL</button>
-              <button>PROGRAMACION SIGUIENTE</button>
+              <button style={{width:"300px"}}>PROGRAMACION ACTUAL</button>
+              <button style={{width:"310px"}}>PROGRAMACION SIGUIENTE</button>
             </div>
           </div>
         </div>

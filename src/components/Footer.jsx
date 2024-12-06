@@ -15,7 +15,7 @@ export default function Footer() {
         <img src={america_digital} alt="América Digital" />
         <img src={n_canal} alt="Canal N" />
       </div>
-      <p className="footer-p"><strong>América</strong> © Todos los derechos reservados</p>
+      <p className="footer-p"><strong className='semibold'>América</strong> © Todos los derechos reservados</p>
     </footer>
   );
 }

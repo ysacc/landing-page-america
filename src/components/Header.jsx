@@ -33,28 +33,54 @@ export default function Header({ onScrollToDownload }) {
         <img src={logo_america} alt="Logo América" className="logo" />
       </motion.header>
       {isMobile &&(
-          <main className="main">
+              <motion.main
+              className="main"
+              initial="hidden"
+              animate="visible"
+              custom={1}
+              variants={containerVariants}
+            >
           <div style={{marginLeft:"40px"}} >
-          <h1>{HEADER_TEXT.title}</h1>
-          <p>
+          <motion.h1 custom={2} variants={containerVariants}>{HEADER_TEXT.title} </motion.h1>
+          <motion.p custom={3} variants={containerVariants}>
             {HEADER_TEXT.subtitle} <br />{HEADER_TEXT.subtitle1} <br />
               <strong className="p-strong">{HEADER_TEXT.subtitle2}</strong> {HEADER_TEXT.subtitle3}<br /><strong className="p-strong">{HEADER_TEXT.subtitle4}</strong>
-            </p>
+            </motion.p>
           </div>
          <div className="logos">
-             <div style={{margin:"auto",marginBottom:"-30px"}}>
+         <motion.div 
+             initial="hidden"
+              animate="visible"
+              whileHover={{ scale: 1.1 }}
+              custom={4}
+              variants={containerVariants}
+              style={{margin:"auto",marginBottom:"-30px"}}
+             >
                <img src={america} alt={LOGOS_ALT_TEXT.america} />
-             </div>
-             <div className="logos1">
-             <div>
+             </motion.div>
+             <motion.div 
+             initial="hidden"
+              animate="visible"
+              whileHover={{ scale: 1.1 }}
+              custom={5}
+              variants={containerVariants}
+              className="logos1"
+             >
+            <div>
                  <img src={n_canal} alt={LOGOS_ALT_TEXT.nCanal} />
                </div>
                <div>
                  <img src={america_studios} alt={LOGOS_ALT_TEXT.americaStudios} />
                </div>
-
-             </div>
-             <div className="logos2">
+             </motion.div>
+             <motion.div 
+             initial="hidden"
+              animate="visible"
+              whileHover={{ scale: 1.1 }}
+              custom={6}
+              variants={containerVariants}
+              className="logos2"
+             >
                <div>
                  <img src={america_digital} alt={LOGOS_ALT_TEXT.americaDigital} />
                </div>
@@ -62,9 +88,9 @@ export default function Header({ onScrollToDownload }) {
                <div>
                  <img src={kapow} alt={LOGOS_ALT_TEXT.kapow} />
                </div>
-             </div>
+             </motion.div>
            </div>
-       </main>
+       </motion.main>
         )}
         {!isMobile &&(
         <motion.main
@@ -83,39 +109,63 @@ export default function Header({ onScrollToDownload }) {
           {HEADER_TEXT.subtitle} <br />{HEADER_TEXT.subtitle1} <br />
             <strong className="p-strong">{HEADER_TEXT.subtitle2}</strong> {HEADER_TEXT.subtitle3}<br /><strong className="p-strong">{HEADER_TEXT.subtitle4}</strong>
             </motion.p>
-          <motion.div
+          <div
           className="logos"
-          initial="hidden"
-          animate="visible"
-          custom={4}
-          variants={containerVariants}
         >
-            <div>
+            <motion.div 
+             initial="hidden"
+              animate="visible"
+              whileHover={{ scale: 1.1 }}
+              custom={4}
+              variants={containerVariants}
+             >
               <img src={america} alt={LOGOS_ALT_TEXT.america} />
-            </div>
-            <div>
+            </motion.div>
+            <motion.div 
+             initial="hidden"
+              animate="visible"
+              whileHover={{ scale: 1.1 }}
+              custom={5}
+              variants={containerVariants}
+             >
               <img src={america_studios} alt={LOGOS_ALT_TEXT.americaStudios} />
-            </div>
-            <div>
+            </motion.div>
+            <motion.div 
+             initial="hidden"
+              animate="visible"
+              whileHover={{ scale: 1.1 }}
+              custom={6}
+              variants={containerVariants}
+             >
               <img src={kapow} alt={LOGOS_ALT_TEXT.kapow} />
-            </div>
-            <div>
+              </motion.div>
+            <motion.div 
+             initial="hidden"
+              animate="visible"
+              whileHover={{ scale: 1.1 }}
+              custom={7}
+              variants={containerVariants}
+             >
               <img src={america_digital} alt={LOGOS_ALT_TEXT.americaDigital} />
-            </div>
-            <div>
+              </motion.div>
+              <motion.div 
+             initial="hidden"
+              animate="visible"
+              whileHover={{ scale: 1.1 }}
+              custom={8}
+              variants={containerVariants}
+             >
               <img src={n_canal} alt={LOGOS_ALT_TEXT.nCanal} />
-            </div>
-          </motion.div>
+              </motion.div>
+          </div>
         </div>
         </motion.main>
         )}
-
-
-<motion.div
+      <motion.div
         className="footer"
         initial="hidden"
         animate="visible"
-        custom={5}
+        custom={9}
         variants={containerVariants}
       >
        <motion.button
