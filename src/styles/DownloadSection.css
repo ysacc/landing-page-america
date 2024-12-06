@@ -115,10 +115,17 @@
   }
   .download-header{
     display: grid;
-    justify-content: start;
+    justify-content: center;
     align-content: center;
     flex-grow: 1;
     text-align: left;
+    margin-right: 50px;
+  }
+  .download-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 100;
+    line-height: 1;
   }
   .text-buttons{
     font-family: 'WhitneyBook', sans-serif;  
