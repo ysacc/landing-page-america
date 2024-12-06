@@ -39,10 +39,12 @@
     align-items: center;
     gap: 12px;
     margin-bottom: 30px;
+    cursor: pointer;
   }
   
   .footer-logos img {
     width: 55px;
+    
   }
   
   .footer-p {

@@ -54,6 +54,7 @@ p {
   justify-content: center;
   align-items: center;
   gap:40px;
+  cursor: pointer;
 }
 
 .logos img {
@@ -90,6 +91,27 @@ p {
 }
 /* Para pantallas entre 768px y 1600px */
 @media (max-width: 1600px) and (min-width: 768px) {
+  .main{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    flex-grow: 1;
+  }
+  h1 {
+    display: flex;
+    color: #e8521d;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-logos {
+    font-family: 'WhitneyBook';
+    display: flex;
+    flex-direction: column;
+  }
   .logos img {
     width: 120px; /* Ajusta según lo necesario */
   }
@@ -97,11 +119,12 @@ p {
 
 @media (max-width: 768px) {
   .container{
-    height: 100vh; 
+    font-family: 'DSType-ActaExtraBold';
+    width: 100%;
+    height: 90vh; 
     display: flex;
     background-color: #ffffff;
     flex-direction: column;
-    font-family: 'DSType-ActaExtraBold';
   }
   .logo {
     width: 70px; 
