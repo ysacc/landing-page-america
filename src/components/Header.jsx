@@ -48,13 +48,13 @@ export default function Header({ onScrollToDownload }) {
             </motion.p>
           </div>
          <div className="logos">
-         <motion.div 
+             <motion.div 
              initial="hidden"
               animate="visible"
               whileHover={{ scale: 1.1 }}
               custom={4}
               variants={containerVariants}
-              style={{margin:"auto",marginBottom:"-30px"}}
+              className="logos0"
              >
                <img src={america} alt={LOGOS_ALT_TEXT.america} />
              </motion.div>

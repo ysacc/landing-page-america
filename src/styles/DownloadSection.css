@@ -114,12 +114,11 @@
     color: white;
     text-align: center;
     height: 100vh;
-    width: 500px;
     justify-content: center;
     align-content: center;
   }
   .download-main{
-    width: 320px;
+    width: 240px;
   }
   .download-section h2 {
     font-size: 1.5rem;
@@ -128,7 +127,7 @@
   
   .download-section p {
     font-size: 1.5rem;
-    color:  #ccc;
+    color:  #fcd9cb;
     text-align: left;
     width: 250px;
   }
@@ -144,7 +143,7 @@
   
   .text-buttons{
     display: inline-flex;
-    color:  #ccc;
+    color:  white;
     height: 500px;
     align-items: center;
     gap: 80px;
@@ -171,6 +170,7 @@
     align-content: center;
   }
   .buttons button {
+    font-family:'WhitneyMedium';
     padding: 15px 25px;
     font-size: 0.8rem;
     border: 2px solid white;

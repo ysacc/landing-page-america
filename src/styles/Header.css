@@ -97,31 +97,30 @@ p {
 
 @media (max-width: 768px) {
   .container{
-    width: 100%;
     height: 100vh; 
     display: flex;
     background-color: #ffffff;
     flex-direction: column;
+    font-family: 'DSType-ActaExtraBold';
   }
   .logo {
     width: 70px; 
   }
 
   .main{
-    font-family: 'WhitneySemibold', sans-serif;
     justify-content: center;
     align-content: center;
   }
 
   h1 {
     color: #f97f53;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 20px;
   }
 
   .text-logos {
     display: flex;
-
+    font-family: 'WhitneyBook';
   }
 
   .logos {
@@ -132,20 +131,26 @@ p {
 
   }
 
+  .logos0 {
+    margin: auto;
+    margin-bottom: -30px;
+    height: 140px;
+  }
+
   .logos1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 260px;
+    width: 280px;
     place-content: space-between;
-    height: 120px;
+    height: 110px;
   }
 
   .logos2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:20px;
+    gap:30px;
     height: 120px;
   }
 
@@ -154,8 +159,23 @@ p {
   }
 
   p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 1.2;
+    font-family: 'WhitneyBook';
   }
 
+  .cta-button {
+    border: 4px solid #ff6d27;
+    font-family: "WhitneySemibold";
+    background: transparent;
+    color: #ff6d27;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    width: 240px;
+    height: 50px;
+    margin:5px;
+  }
 }

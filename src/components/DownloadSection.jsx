@@ -16,10 +16,10 @@ const DownloadSection = forwardRef((props, ref) => {
           <p>{DOWNLOAD_SECTION_TEXT.description} <br /><strong className="text-strong1">{DOWNLOAD_SECTION_TEXT.description1}</strong> {DOWNLOAD_SECTION_TEXT.description2} <br />{DOWNLOAD_SECTION_TEXT.description3} <br />{DOWNLOAD_SECTION_TEXT.description4}<strong className="text-strong1">{DOWNLOAD_SECTION_TEXT.description5}</strong></p>
         </div>
         <div className="buttons">
-            <button style={{width:"220px"}}>TARIFARIO AMERICA</button>
-            <button style={{width:"240px"}}>TARIFARIO CANAL N</button>
+            <button style={{width:"180px"}}>TARIFARIO AMERICA</button>
+            <button style={{width:"220px"}}>TARIFARIO CANAL N</button>
             <button style={{width:"260px"}}>TARIFARIO DIGITAL</button>
-            <button style={{width:"240px"}}>PROGRAMACION ACTUAL</button>
+            <button style={{width:"220px"}}>PROGRAMACION ACTUAL</button>
             <button style={{width:"260px"}}>PROGRAMACION SIGUIENTE</button>
           </div>
       </div>
