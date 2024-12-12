@@ -12,27 +12,28 @@
   justify-content: center;
   align-content: center;
   transition: filter 1.00s ease;
-  filter: grayscale(100%); /* Fondo en gris por defecto */
+  filter: grayscale(50%);
+  margin: 0 auto; 
 }
 
 .download-section:hover {
-  filter: grayscale(0%); /* El fondo se muestra a color al pasar el mouse */
+  filter: grayscale(0%); 
 }
 
 
 .download-section h2 {
   font-size: 2.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   font-weight: 100;
   line-height: 1;
 }
 
 .download-section p {
   font-size: 2.5rem;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem; 
   color:#fcd9cb;
   text-align: left;
-  width: 400px;
+  width: 100%;
   font-weight: 100;
 }
 
@@ -108,6 +109,23 @@
 
 /* Para pantallas entre 768px y 1600px */
 @media (max-width: 1600px) and (min-width: 768px) {
+  .download-section {
+    display: grid;
+    font-family: 'WhitneyBook';
+    background: url('/assets/fondo-naranja.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: white;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    transition: filter 1.00s ease;
+    filter: grayscale(50%);
+    margin: 0 auto; /* Centra el contenido en la pantalla */
+  }
   .download-main{
     display: grid;
     justify-content: center;
@@ -118,35 +136,38 @@
     justify-content: center;
     align-content: center;
     flex-grow: 1;
-    text-align: left;
-    margin-right: 50px;
+    height: 5rem;
   }
+ 
   .download-section h2 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
     font-weight: 100;
     line-height: 1;
   }
+  .download-section p {
+    font-size: 1.5rem;
+    margin-bottom: 6rem;
+  }
+  .text-strong1{
+    color: white;
+    font-weight: 700;
+    font-size:1.8rem;
+   }
   .text-buttons{
     font-family: 'WhitneyBook', sans-serif;  
     display: inline-flex;
     color:  #fcd9cb;
-    height: 500px;
     align-items: center;
-    gap: 80px;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    margin-bottom: 40px;
   }
   .buttons {
     display: grid;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
-    height: 20px;
-    width: 550px;
+    width: 100%;
     align-content: center;
-    justify-items: center;
   }
 }
 
@@ -160,6 +181,7 @@
     color: white;
     text-align: center;
     height: 100vh;
+    width: 100%;
     justify-content: center;
     align-content: center;
   }
