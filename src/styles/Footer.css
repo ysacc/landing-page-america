@@ -1,7 +1,7 @@
 .footer-content {
   background-color: #6f7dbc;
   text-align: center;
-  height: 40vh;
+  height: 38vh;
   width: 100%;
   align-content: center;
 }
@@ -23,6 +23,7 @@
   margin-top: 10px;
   color: #fff;
   font-family: 'WhitneyBook';
+  margin-bottom: 0px;
 }
 
 @media (max-width: 768px) {

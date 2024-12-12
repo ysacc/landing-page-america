@@ -10,9 +10,7 @@
   align-items: center;
   z-index: 9999; /* Asegura que esté encima de todo */
 }
-.icon-loading{
-  width: 10rem; 
-}
+
 /* Ocultar la pantalla de carga cuando se complete */
 .hidden {
   display: none;

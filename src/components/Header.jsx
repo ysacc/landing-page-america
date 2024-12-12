@@ -13,6 +13,7 @@ import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 
 export default function Header({ onScrollToDownload }) {
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
+  const isTablet = useMediaQuery({ query: '(max-width: 1600px)' });
   const containerVariants = {
     hidden: { opacity: 0, y: 30 },
     visible: (i = 1) => ({
@@ -40,7 +41,7 @@ export default function Header({ onScrollToDownload }) {
               custom={1}
               variants={containerVariants}
             >
-          <div style={{marginLeft:"40px"}} >
+          <div style={{marginLeft:"40px",marginTop:"80px"}} >
           <motion.h1 custom={2} variants={containerVariants}>{HEADER_TEXT.title} </motion.h1>
           <motion.p custom={3} variants={containerVariants}>
             {HEADER_TEXT.subtitle} <br />{HEADER_TEXT.subtitle1} <br />
@@ -100,15 +101,29 @@ export default function Header({ onScrollToDownload }) {
         custom={1}
         variants={containerVariants}
       >
-        <div>
+        {isTablet && (
+        <div className='tablet-header'>
         <motion.h1 custom={2} variants={containerVariants}>{HEADER_TEXT.title} </motion.h1>
-        </div>
+        <motion.p custom={3} variants={containerVariants}>
+                {HEADER_TEXT.subtitle} {HEADER_TEXT.subtitle12}<br />{HEADER_TEXT.subtitle123}
+                <strong className="p-strong">{HEADER_TEXT.subtitle2}</strong> {HEADER_TEXT.subtitle3}<strong className="p-strong">{HEADER_TEXT.subtitle4}</strong>
+                </motion.p>
+                </div>
+            )}
        
         <div className="text-logos">
+
+       {!isTablet && (
+        <div>
+          <motion.h1 custom={2} variants={containerVariants}>{HEADER_TEXT.title} </motion.h1>
+          
         <motion.p custom={3} variants={containerVariants}>
           {HEADER_TEXT.subtitle} <br />{HEADER_TEXT.subtitle1} <br />
             <strong className="p-strong">{HEADER_TEXT.subtitle2}</strong> {HEADER_TEXT.subtitle3}<br /><strong className="p-strong">{HEADER_TEXT.subtitle4}</strong>
             </motion.p>
+            </div>
+      )}
+        
           <div
           className="logos"
         >

@@ -2,6 +2,8 @@ export const HEADER_TEXT = {
     title: '¡Hola!',
     subtitle: `Pronto te estaremos `,
     subtitle1:`presentando un nuevo `, 
+    subtitle12:`presentando un `, 
+    subtitle123:`nuevo `, 
     subtitle2:`ecosistema `,     
     subtitle3:`comercial `, 
     subtitle4:`pensado en ti.`,    

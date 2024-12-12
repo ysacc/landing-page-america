@@ -11,8 +11,6 @@
   width: 100%;
   justify-content: center;
   align-content: center;
-  transition: filter 1.00s ease;
-  filter: grayscale(50%);
   margin: 0 auto; 
 }
 
@@ -22,14 +20,14 @@
 
 
 .download-section h2 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-bottom: 2rem;
   font-weight: 100;
   line-height: 1;
 }
 
 .download-section p {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-bottom: 2.5rem; 
   color:#fcd9cb;
   text-align: left;
@@ -49,9 +47,9 @@
   font-family: 'WhitneyBook', sans-serif;  
   display: inline-flex;
   color:  #fcd9cb;
-  height: 500px;
+  height: 400px;
   align-items: center;
-  gap: 80px;
+  gap: 200px;
 }
 
 .text-strong{
@@ -64,13 +62,13 @@
 .text-strong1{
   color: white;
   font-weight: 700;
-  font-size:2.5rem;
+  font-size:2.2rem;
  }
 .buttons {
   display: grid;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 25px;
+  gap: 35px;
   height: 20px;
   width: 550px;
   align-content: center;
@@ -82,8 +80,8 @@
 .buttons button {
   font-family:'WhitneySemibold';
   padding: 15px 25px;
-  font-size: 1.2rem;
-  height: 60px;
+  font-size: 1.1rem;
+  height: 70px;
   border: 3px solid white;
   border-radius: 100px;
   background: none;
@@ -98,13 +96,10 @@
   color: #e65725;
 }
 
-.blur {
-  filter: blur(5px);
-  transition: filter 0.60s ease-in-out;
-}
 
-.blur.visible {
-  filter: blur(0);
+.download-main{
+  margin-top: -130px;
+  margin-left: -300px;
 }
 
 /* Para pantallas entre 768px y 1600px */
@@ -122,40 +117,65 @@
     width: 100%;
     justify-content: center;
     align-content: center;
-    transition: filter 1.00s ease;
-    filter: grayscale(50%);
+    margin: 0 auto; 
+  }
+  .download-section {
+    display: grid;
+    font-family: 'WhitneyBook';
+    background: url('/assets/fondo-naranja.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: white;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
     margin: 0 auto; /* Centra el contenido en la pantalla */
   }
   .download-main{
     display: grid;
     justify-content: center;
     align-content: center;
+    margin-top: 0px;
+    margin-left: 0px;
+    gap: 140px;
   }
   .download-header{
-    display: grid;
+    display: flex;
     justify-content: center;
     align-content: center;
     flex-grow: 1;
-    height: 5rem;
+    height: 4rem;
+    width: 50rem;
   }
  
   .download-section h2 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: 100;
     line-height: 1;
+    width: 20rem;
   }
   .download-section p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 6rem;
+    width: 23rem;
   }
   .text-strong1{
     color: white;
     font-weight: 700;
     font-size:1.8rem;
    }
+   .text-strong{
+    color: white;
+   font-weight: 700;
+   font-size:  2.5rem;
+   font-family:'DSType-ActaExtraBold';
+  }
   .text-buttons{
     font-family: 'WhitneyBook', sans-serif;  
-    display: inline-flex;
+    display: grid;
     color:  #fcd9cb;
     align-items: center;
     flex-direction: column;
@@ -166,8 +186,8 @@
     display: grid;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
     align-content: center;
+    margin-left: 100px;
   }
 }
 
@@ -187,14 +207,16 @@
   }
   .download-main{
     width: 240px;
+    margin-top: 0px;
+  margin-left: 0px;
   }
   .download-section h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 400;
   }
   
   .download-section p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color:  #fcd9cb;
     text-align: left;
     width: 250px;
@@ -220,13 +242,13 @@
   .text-strong{
     color: white;
    font-weight: 700;
-   font-size:xx-large;
+   font-size:2rem;
   }
   
   .text-strong1{
     color: white;
     font-weight: 700;
-    font-size:26px;
+    font-size:1.4rem;
    }
   .buttons {
     display: grid;
