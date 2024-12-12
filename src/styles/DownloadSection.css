@@ -140,7 +140,7 @@
     align-content: center;
     margin-top: 0px;
     margin-left: 0px;
-    gap: 140px;
+    gap: 80px;
   }
   .download-header{
     display: flex;
@@ -155,12 +155,13 @@
     font-size: 1.8rem;
     font-weight: 100;
     line-height: 1;
-    width: 20rem;
+    width: 13rem;
+    margin-top: 30px;
   }
   .download-section p {
     font-size: 1.8rem;
     margin-bottom: 6rem;
-    width: 23rem;
+    width: 30rem;
   }
   .text-strong1{
     color: white;
@@ -188,6 +189,20 @@
     justify-content: center;
     align-content: center;
     margin-left: 100px;
+    gap: 26px;
+  }
+  .buttons button {
+    font-family:'WhitneySemibold';
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    height: 63px;
+    border: 3px solid white;
+    border-radius: 100px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align:justify ;
   }
 }
 

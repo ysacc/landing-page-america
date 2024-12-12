@@ -21,10 +21,16 @@ export const HEADER_TEXT = {
   export const DOWNLOAD_SECTION_TEXT = {
     header: '¡Descárgate la',
     header2: 'Preventa 2025!',
+    header21: 'Preventa',
+    header22: '2025!',
     description: `Desde aquí puedes `,
     description1: `descargar `,       
     description2: `los archivos `,  
+    description21: `los `,  
+    description22: `archivos `,  
     description3: `que necesitas para `,   
+    description31: `que necesitas `, 
+    description32: `para `, 
     description4: `tu `,   
     description5: `planificación.`,         
     buttons: {
