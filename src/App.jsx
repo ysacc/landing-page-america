@@ -30,7 +30,7 @@ export default function App() {
     <>
       {loading && (
         <div className="loading-screen">
-          <img src={loadingGif} alt="Cargando..." />
+          <img className="icon-loading" src={loadingGif} alt="Cargando..." />
         </div>
       )}
       {!loading && (
