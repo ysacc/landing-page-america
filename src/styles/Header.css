@@ -55,7 +55,6 @@ p {
   justify-content: center;
   align-items: center;
   gap:40px;
-  cursor: pointer;
   margin-top: 80px;
 }
 
@@ -78,7 +77,6 @@ p {
   color: #e8521d;
   padding: 10px 20px;
   font-size: 1.1rem;
-  cursor: pointer;
   border-radius: 100px;
   transition: all 0.3s ease;
   width: 330px;
@@ -157,7 +155,6 @@ p {
     justify-content: center;
     align-items: center;
     gap:5%;
-    cursor: pointer;
     margin-top: 0px;
   }
 
@@ -249,7 +246,6 @@ p {
     color: #e8521d;
     padding: 10px 20px;
     font-size: 0.8rem;
-    cursor: pointer;
     border-radius: 100px;
     transition: all 0.3s ease;
     width: 240px;

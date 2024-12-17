@@ -1,10 +1,10 @@
 .download-section {
   display: grid;
   font-family: 'WhitneyBook';
-  background: url('/assets/fondo-naranja.jpg');
+  /* background: url('/assets/fondo-naranja.jpg');
   background-size: cover; 
   background-position: center; 
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;  */
   color: white;
   text-align: center;
   height: 100vh;
@@ -86,7 +86,6 @@
   border-radius: 100px;
   background: none;
   color: white;
-  cursor: pointer;
   transition: all 0.3s ease;
   text-align:justify ;
 }
@@ -200,7 +199,6 @@
     border-radius: 100px;
     background: none;
     color: white;
-    cursor: pointer;
     transition: all 0.3s ease;
     text-align:justify ;
   }
@@ -282,7 +280,6 @@
     border-radius: 100px;
     background: none;
     color: white;
-    cursor: pointer;
     transition: all 0.3s ease;
     text-align:justify ;
     height: 50px;
