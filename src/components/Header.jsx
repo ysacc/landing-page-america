@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Header.css';
 import { motion } from 'framer-motion';
-import logo_america from '/assets/Precarga-America-v02.gif'; 
+import logo_america from '/assets/logo-america-multimedia.svg'; 
 import america_digital from '/assets/logo-04.svg'; 
 import america_studios from '/assets/logo-02.svg';
 import kapow from '/assets/logo-03.svg';
@@ -22,6 +22,21 @@ export default function Header({ onScrollToDownload }) {
       transition: { delay: i * 0.15, duration: 0.5, ease: "easeOut" },
     }),
   };
+  const urlMap = {
+    america: 'https://www.america.com',
+    americaStudios: 'https://www.americastudios.com',
+    kapow: 'https://www.kapow.com',
+    americaDigital: 'https://www.americadigital.com',
+    nCanal: 'https://www.ncanal.com',
+  };
+
+  const handleRedirect = (event) => {
+    const id = event.currentTarget.getAttribute('data-id');
+    if (id && urlMap[id]) {
+      window.open(urlMap[id], '_blank'); 
+    }
+  };  
+  
     return (
     <div className="container">
       <motion.header
@@ -62,6 +77,8 @@ export default function Header({ onScrollToDownload }) {
         custom={4}
         variants={containerVariants}
         className="logos0"
+        data-id="america"
+        onClick={handleRedirect}
       >
         <motion.img
           src={america}
@@ -81,6 +98,7 @@ export default function Header({ onScrollToDownload }) {
         <div>
           <motion.img
             src={n_canal}
+            data-id="nCanal" onClick={handleRedirect}
             alt={LOGOS_ALT_TEXT.nCanal}
             whileHover={{ scale: 1.2, rotate: -10 }}
             transition={{ duration: 0.3 }}
@@ -89,6 +107,7 @@ export default function Header({ onScrollToDownload }) {
         <div>
           <motion.img
             src={america_studios}
+            data-id="americaStudios" onClick={handleRedirect}
             alt={LOGOS_ALT_TEXT.americaStudios}
             whileHover={{ scale: 1.2, rotate: 15 }}
             transition={{ duration: 0.3 }}
@@ -106,6 +125,7 @@ export default function Header({ onScrollToDownload }) {
         <div>
           <motion.img
             src={america_digital}
+            data-id="americaDigital" onClick={handleRedirect}
             alt={LOGOS_ALT_TEXT.americaDigital}
             whileHover={{ scale: 1.2, rotate: -15 }}
             transition={{ duration: 0.3 }}
@@ -114,6 +134,7 @@ export default function Header({ onScrollToDownload }) {
         <div>
           <motion.img
             src={kapow}
+            data-id="kapow" onClick={handleRedirect}
             alt={LOGOS_ALT_TEXT.kapow}
             whileHover={{ scale: 1.2, rotate: 20 }}
             transition={{ duration: 0.3 }}
@@ -164,6 +185,8 @@ export default function Header({ onScrollToDownload }) {
               whileHover={{ scale: 1.1 }}
               custom={4}
               variants={containerVariants}
+              data-id="america"
+              onClick={handleRedirect}
              >
               <img src={america} alt={LOGOS_ALT_TEXT.america} />
             </motion.div>
@@ -173,6 +196,7 @@ export default function Header({ onScrollToDownload }) {
               whileHover={{ scale: 1.1 }}
               custom={5}
               variants={containerVariants}
+              data-id="americaStudios" onClick={handleRedirect}
              >
               <img src={america_studios} alt={LOGOS_ALT_TEXT.americaStudios} />
             </motion.div>
@@ -182,6 +206,7 @@ export default function Header({ onScrollToDownload }) {
               whileHover={{ scale: 1.1 }}
               custom={6}
               variants={containerVariants}
+              data-id="kapow" onClick={handleRedirect}
              >
               <img src={kapow} alt={LOGOS_ALT_TEXT.kapow} />
               </motion.div>
@@ -191,6 +216,7 @@ export default function Header({ onScrollToDownload }) {
               whileHover={{ scale: 1.1 }}
               custom={7}
               variants={containerVariants}
+              data-id="americaDigital" onClick={handleRedirect}
              >
               <img src={america_digital} alt={LOGOS_ALT_TEXT.americaDigital} />
               </motion.div>
@@ -200,6 +226,7 @@ export default function Header({ onScrollToDownload }) {
               whileHover={{ scale: 1.1 }}
               custom={8}
               variants={containerVariants}
+              data-id="nCanal" onClick={handleRedirect}
              >
               <img src={n_canal} alt={LOGOS_ALT_TEXT.nCanal} />
               </motion.div>
